@@ -1,0 +1,11 @@
+SegmentBM
+*.o
+*.msh
+*.vtk
+*.swp
+*.bak
+!meshes/ball.msh
+!meshes/cube.msh
+!meshes/cylinder.msh
+!meshes/yoke.msh
+!meshes/dumpbell.msh
