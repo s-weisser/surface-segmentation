@@ -2,7 +2,7 @@
 
 The task of this project is to partition a boundary mesh (containing solely triangles) into several segments, such that no segment contains a geometric edge of the surface. This segmentation is used as preprocessing tool for other algorithms.
 
-Why have we developed this tool? When solving boundary value problems by means of boundary element methods one encounters fully populated matrices. These matrices are often approximated by hierarchical matrices ($`\mathcal{H}`$-matrices) and the *Adaptive Cross Approximation (ACA)*, see [1]. For this reason the matrix indices and equivalently the boundary mesh is clustered. It has been observed that clusters containing sharp geometric edges influence the approximation algorithms. Therefore, we proposed in [2] to use a *surface segmentation* in a preprocessing step and to apply the clustering afterwards on top of the segmentation.
+Why have we developed this tool? When solving boundary value problems by means of boundary element methods one encounters fully populated matrices. These matrices are often approximated by hierarchical matrices (H-matrices) and the *Adaptive Cross Approximation (ACA)*, see [1]. For this reason the matrix indices and equivalently the boundary mesh is clustered. It has been observed that clusters containing sharp geometric edges influence the approximation algorithms. Therefore, we proposed in [2] to use a *surface segmentation* in a preprocessing step and to apply the clustering afterwards on top of the segmentation.
 
 ## Getting Started
 
@@ -42,8 +42,7 @@ and the variant with postprocessing
 ```
 and obtain the following results for `dumpbell_1` and for `dumpbell_2`
 
-<img src="figures/dumpbell_1.png" width="300px" alt="dumpbell_1.png">
-<img src="figures/dumpbell_2.png" width="300px" alt="dumpbell_2.png">
+<img src="figures/dumpbell_1.png" width="300px" alt="dumpbell_1.png">&nbsp;&nbsp;&nbsp;<img src="figures/dumpbell_2.png" width="300px" alt="dumpbell_2.png">
 
 
 ### More Details
