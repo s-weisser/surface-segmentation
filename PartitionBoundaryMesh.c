@@ -213,7 +213,7 @@ static void followEdge(Edge *edge, Node *node,
         
         cos_angle0 = cblas_ddot(3, tria->Norm, 1, nextTria0->Norm, 1);
   
-        // in case that edge is not a geometric edge assign the i
+        // in case that edge is not a geometric edge assign the 
         // triangle to the segment if it is not already assigned
         if (cos_angle0 >= threshold && nextTria0->SegmentNum < 0) {
           nextTria0->SegmentNum = tria->SegmentNum;
@@ -265,7 +265,7 @@ static void followEdge(Edge *edge, Node *node,
         }
 
         if (nextTria0->SegmentNum < 0 && cos_angle0 < threshold) {
-          // since there is a geometric edge, assign new segment number to the trianle
+          // since there is a geometric edge, assign new segment number to the triangle
           nextTria0->SegmentNum = *numSegments;
 
           // initialize list for new segment
@@ -279,7 +279,7 @@ static void followEdge(Edge *edge, Node *node,
           ListAdd((*segments)[*numSegments],(void*)nextTria0);
           (*numSegments)++;
         } else if (nextTria0->SegmentNum < 0) {
-          // since there is no geometric edge, assign previous segment number to the trianle
+          // since there is no geometric edge, assign previous segment number to the triangle
           nextTria0->SegmentNum = tria->SegmentNum;
           ListAdd((*segments)[tria->SegmentNum],(void*)nextTria0);
         }
