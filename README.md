@@ -74,8 +74,8 @@ detects 11 segments on the boundary of the dumpbell as expected. In contrast, th
 
 ## Authors
 
-* **Sergej Rjasanow**, Department of Mathematics, Saarland University, [web](www.num.uni-sb.de/rjasanow)
-* **Steffen Weißer**, Department of Mathematics, Saarland University, [web](www.num.uni-sb.de/weisser)
+* **Sergej Rjasanow**, Department of Mathematics, Saarland University, [web](http://www.num.uni-sb.de/rjasanow)
+* **Steffen Weißer**, Department of Mathematics, Saarland University, [web](http://www.num.uni-sb.de/weisser)
 
 
 ## Questions / Comments / Contributions
